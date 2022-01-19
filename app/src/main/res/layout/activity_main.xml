@@ -47,7 +47,7 @@
         android:layout_marginTop="26dp"
         android:layout_marginEnd="158dp"
         android:layout_marginBottom="265dp"
-        android:background="#4CAF50"
+        android:background="@color/mcGreen"
         android:backgroundTint="#002A872C"
         android:fontFamily="@font/minecraftten"
         android:onClick="pressedStart"

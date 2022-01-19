@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkBK"
+    android:onClick="screenTapped"><![CDATA[
+    tools:context=".newPetActivity">
+
+
+
+
+
+
+
+    ]]>
+
+    <Button
+        android:id="@+id/backButton3"
+        android:layout_width="75dp"
+        android:layout_height="45dp"
+        android:background="@color/mcGreen"
+        android:fontFamily="@font/minecraftten"
+        android:onClick="pressedBack"
+        android:text="Back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/displayImage"
+        android:layout_width="383dp"
+        android:layout_height="390dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="150dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/spawn_egg_snowfox" />
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="69dp"
+        android:fontFamily="@font/minecraftten"
+        android:text="Tap the egg"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/egg_healthbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/egg_healthbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="273dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="26dp"
+        android:progressTint="@color/mcGreen"
+        app:layout_constraintBottom_toTopOf="@+id/displayImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleText" />
+
+    <Button
+        android:id="@+id/confirmButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="142dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginBottom="48dp"
+        android:background="@color/mcGreen"
+        android:fontFamily="@font/minecraftten"
+        android:onClick="pressedConfirm"
+        android:text="Confirm"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

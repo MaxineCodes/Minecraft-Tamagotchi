@@ -7,6 +7,17 @@
     android:background="@color/darkBK"
     tools:context=".overviewActivity">
 
+    <Button
+        android:id="@+id/backButton2"
+        android:layout_width="75dp"
+        android:layout_height="45dp"
+        android:background="@color/mcGreen"
+        android:fontFamily="@font/minecraftten"
+        android:onClick="pressedBack"
+        android:text="Back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -31,6 +42,7 @@
         android:layout_marginStart="100dp"
         android:layout_marginTop="94dp"
         android:layout_marginEnd="100dp"
+        android:background="@color/mcGreen"
         android:fontFamily="@font/minecraft"
         android:onClick="pressedPet1"
         android:text="Pet 1"
@@ -47,6 +59,7 @@
         android:layout_marginTop="36dp"
         android:layout_marginEnd="100dp"
         android:layout_marginBottom="151dp"
+        android:background="@color/mcGreen"
         android:fontFamily="@font/minecraft"
         android:onClick="pressedPet2"
         android:text="Pet 2"
